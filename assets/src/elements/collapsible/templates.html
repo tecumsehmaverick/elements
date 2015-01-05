@@ -4,6 +4,8 @@
         {% for item in collapsible %}
             <dt>{{ item.title }}</dt>
             <dd>{{ item.description }}</dd>
+            <!-- Example of an element with another element inside - no conflic on styles and scripts -->
+    		<!-- <dd>{% include '../../elements/slideshow/templates.html' %}</dd> -->
         {% endfor %}
     </dl>
 </collapsible>
