@@ -1,20 +1,20 @@
 {
   "collapsible": [
     {
-      "title": "lorem ispum 1",
-      "description": "lorem ipsum is a latin text used as sample content placeholder"
+      "title": "lorem ispum 1 (click here, this is a clickable header)",
+      "description": "lorem ipsum is a latin text used as sample content placeholder lorem ipsum is a latin text used as sample content placeholder lorem ipsum is a latin text used as sample content placeholder lorem ipsum is a latin text used as sample content placeholder"
     },
     {
-      "title": "lorem ispum 2",
-      "description": "lorem ipsum is a latin text used as sample content placeholder"
+      "title": "lorem ispum 2 (click here, this is a clickable header)",
+      "description": "lorem ipsum is a latin text used as sample content placeholder lorem ipsum is a latin text used as sample content placeholder lorem ipsum is a latin text used as sample content placeholder lorem ipsum is a latin text used as sample content placeholder"
     },
     {
-      "title": "lorem ispum 3",
-      "description": "lorem ipsum is a latin text used as sample content placeholder"
+      "title": "lorem ispum 3 (click here, this is a clickable header)",
+      "description": "lorem ipsum is a latin text used as sample content placeholder lorem ipsum is a latin text used as sample content placeholder lorem ipsum is a latin text used as sample content placeholder lorem ipsum is a latin text used as sample content placeholder"
     },
     {
-      "title": "lorem ispum 4",
-      "description": "lorem ipsum is a latin text used as sample content placeholder"
+      "title": "lorem ispum 4 (click here, this is a clickable header)",
+      "description": "lorem ipsum is a latin text used as sample content placeholder lorem ipsum is a latin text used as sample content placeholder lorem ipsum is a latin text used as sample content placeholder lorem ipsum is a latin text used as sample content placeholder"
     }
   ],
   "slideshow": [
