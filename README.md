@@ -2,32 +2,11 @@
 
 This project is a collection of custom HTML5 elements.
 
-The compilation step is by default with Gulp, and for development enviroment. This step can be done in several other ways.
+The compilation step is by default with Gulp, and for development enviroment. This step can be done in several other ways, let us know if you have a different implementation.
 
 To use this material, include with your frontend files and follow the instructions in each element template file about how import the element in the page. You'll notice that some elements have an API schema required, checkout if your system are able to use the suggested standards.
 
-Checkout some sample results [preview page with slideshow and collapsible elements].
-
----
-
-## Options
-
-- __Templates (HTML)__
-  - [ ] XSLT
-  - [ ] Twig
-  - [ ] Jade
-  - [ ] HAML
-  - [ ] Others...
-
-- __Styles (CSS)__
-  - [ ] Sass
-  - [ ] Less
-  - [ ] Stylus
-
-- __Scripts (JS)__
-  - [ ] Browserify
-  - [ ] Coffee
-  - [ ] Others...
+Checkout a sample result of the elements compiled in a single page at [bernardodiasc.github.io/elements](http://bernardodiasc.github.io/elements).
 
 ---
 
@@ -47,12 +26,29 @@ Checkout some sample results [preview page with slideshow and collapsible elemen
 
 ---
 
-## Elements
+## Elements available
 
-- Slideshow
-- Collapsible
+- [Collapsible](/assets/src/elements/collapsible)
+- [Slideshow](/assets/src/elements/slideshow)
 
-----
+---
 
-To do:
-- Config src and dist path
+## Options
+
+- __Templates (HTML)__
+  - [x] XSLT (XML)
+  - [x] Swig (Json)
+  - [ ] Jade (Json)
+  - [ ] HAML (YAML)
+  - [ ] Others...
+
+- __Styles (CSS)__
+  - [x] Sass
+  - [ ] Less
+  - [ ] Stylus
+
+- __Scripts (JS)__
+  - [x] Self executing anonymous functions
+  - [ ] Browserify
+  - [ ] Coffee
+  - [ ] Others...

@@ -12,11 +12,13 @@
     <html>
         <head>
             <title>Frontend Elements Test Page</title>
-            <link rel="stylesheet" href="{$workspace}/assets/dist/css/main.min.css"/>
+            <link rel="stylesheet" href="./assets/dist/css/main.min.css"/>
         </head>
         <body>
             <xsl:apply-templates />
-            <script src="{$workspace}/assets/dist/js/main.min.js"></script>
+            <script src="./assets/dist/js/main.min.js">
+                /* Strange bug if remove inner script-tag content */
+            </script>
         </body>
     </html>
 </xsl:template>

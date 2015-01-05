@@ -1,6 +1,6 @@
 var gulp = require('gulp'),
     tasks = [
-        //'templates-xslt',
+        'templates-xslt',
         'templates-swig',
         'styles-sass',
         'scripts',

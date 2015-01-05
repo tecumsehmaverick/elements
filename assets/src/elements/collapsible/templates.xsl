@@ -31,22 +31,16 @@ Where the API `data/faq` (`xml`) :
 ```
 -->
 
-<xsl:import href="../../utilities/ninja.xsl"/>
-
-<xsl:template match="*[section/@handle = 'faq']" mode="collapsible">
-    <h1>Collapsible module [Data from FAQ Section]</h1>
-    <module class="collapsible" data-module="collapsible">
+<xsl:template name="collapsible">
+    <collapsible>
+        <h2>Collapsible element</h2>
         <dl>
-            <xsl:for-each select="entry">
-                <dt>
-                    <h2><xsl:value-of select="title"/>?</h2>
-                </dt>
-                <dd>
-                    <xsl:apply-templates select="text/*" mode="html"/>
-                </dd>
+            <xsl:for-each select="/data/collapsible/entry">
+                <dt><xsl:value-of select="title"/></dt>
+                <dd><xsl:value-of select="description"/></dd>
             </xsl:for-each>
         </dl>
-    </module>
+    </collapsible>
 </xsl:template>
 
 </xsl:stylesheet>

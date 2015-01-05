@@ -21,7 +21,7 @@ API (XML):
 </gallery>
 -->
 
-<xsl:template match="*[section/@handle = 'gallery']" mode="slideshow">
+<!-- <xsl:template match="*[section/@handle = 'gallery']" mode="slideshow">
     <h1>Slideshow module [Data from Gallery Section]</h1>
     <module class="slideshow" data-module="slideshow">
         <xsl:for-each select="entry">
@@ -49,6 +49,6 @@ API (XML):
             </xsl:for-each>
         </nav>
     </module>
-</xsl:template>
+</xsl:template> -->
 
 </xsl:stylesheet>

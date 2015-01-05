@@ -1,0 +1,20 @@
+<data>
+    <collapsible>
+        <entry>
+            <title>lorem ispum 1</title>
+            <description>lorem ipsum is a latin text used as sample content placeholder</description>
+        </entry>
+        <entry>
+            <title>lorem ispum 2</title>
+            <description>lorem ipsum is a latin text used as sample content placeholder</description>
+        </entry>
+        <entry>
+            <title>lorem ispum 3</title>
+            <description>lorem ipsum is a latin text used as sample content placeholder</description>
+        </entry>
+        <entry>
+            <title>lorem ispum 4</title>
+            <description>lorem ipsum is a latin text used as sample content placeholder</description>
+        </entry>
+    </collapsible>
+</data>
