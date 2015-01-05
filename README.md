@@ -6,7 +6,12 @@ The compilation step is by default with Gulp, and for development enviroment. Th
 
 To use this material, include with your frontend files and follow the instructions in each element template file about how import the element in the page. You'll notice that some elements have an API schema required, checkout if your system are able to use the suggested standards.
 
-Checkout a sample result of the elements compiled in a single page at [bernardodiasc.github.io/elements](http://bernardodiasc.github.io/elements).
+Checkout a sample output of the elements at [bernardodiasc.github.io/elements](http://bernardodiasc.github.io/elements).
+
+## Elements available
+
+- [Collapsible](/assets/src/elements/collapsible)
+- [Slideshow](/assets/src/elements/slideshow)
 
 ---
 
@@ -21,15 +26,8 @@ Checkout a sample result of the elements compiled in a single page at [bernardod
 ### How to use
 
 1. Open the file `gulpfile.js`
-2. Read and edit lines `#`
+2. Read and edit lines `#` (_TBP_)
 3. Run `gulp`
-
----
-
-## Elements available
-
-- [Collapsible](/assets/src/elements/collapsible)
-- [Slideshow](/assets/src/elements/slideshow)
 
 ---
 
