@@ -1,7 +1,13 @@
-module.slideshow {
+slideshow {
+    display: block;
     position: relative;
     max-width: 500px;
     height: 254px;
+
+    img {
+        max-width: 500px;
+        max-height: 254px;
+    }
 
     .slide {
         display: none;
@@ -11,6 +17,7 @@ module.slideshow {
         width: 100%;
         height: 254px;
         z-index: 1;
+        overflow: hidden;
 
         &.active {
             display: block;

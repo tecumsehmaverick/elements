@@ -1,0 +1,23 @@
+<slideshow>
+    <h2>Slideshow element</h2>
+    {% for slide in slideshow %}
+        <slide class="slide{% if loop.index == 1 %} active{% endif %}" data-index="{{ loop.index - 1 }}">
+            {% if slide.link %}
+                <a href="{{ slide.link }}">
+                    <img src="./assets/dist/img/{{ slide.image }}" alt="{{ slide.title }}">
+                </a>
+            {% else %}
+                <img src="./assets/dist/img/{{ slide.image }}" alt="{{ slide.title }}">
+            {% endif %}
+        </slide>
+    {% endfor %}
+    <nav class="nav">
+        <button class="prev">Previous</button>
+        <button class="next">Next</button>
+    </nav>
+    <nav class="control">
+        {% for slide in slideshow %}
+            <button class="{% if loop.index == 1 %}active{% endif %} control-item" data-index="{{ loop.index - 1 }}">{{ loop.index }}</button>
+        {% endfor %}
+    </nav>
+</slideshow>

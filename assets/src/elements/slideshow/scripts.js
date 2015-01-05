@@ -88,16 +88,15 @@ __Style required:__
 (function(){
     "use strict";
 
-    [].forEach.call(document.querySelectorAll('[data-module="slideshow"]'), function(module){
-        console.log(module);
+    [].forEach.call(document.querySelectorAll('slideshow'), function(module){
         
         var index = 0, interval = 0,
-            slides = module.getElementsByClassName("js-slide"),
-            nav = module.getElementsByClassName("js-nav")[0],
-            prev = nav.getElementsByClassName("js-prev")[0],
-            next = nav.getElementsByClassName("js-next")[0],
-            control = module.getElementsByClassName("js-control")[0],
-            controlItens = control.getElementsByClassName("js-control-item");
+            slides = module.querySelectorAll("slide"),
+            nav = module.getElementsByClassName("nav")[0],
+            prev = nav.getElementsByClassName("prev")[0],
+            next = nav.getElementsByClassName("next")[0],
+            control = module.getElementsByClassName("control")[0],
+            controlItens = control.getElementsByClassName("control-item");
 
         function setHeight(){
             module.style.height = slides[index].offsetHeight + "px";

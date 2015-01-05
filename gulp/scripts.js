@@ -18,7 +18,7 @@ module.exports = function () {
         //.pipe(jshint('.jshintrc'))
         //.pipe(jshint.reporter('jshint-stylish'))
         .pipe(addsrc('./assets/src/scripts/vendors/**/*.js'))
-        .pipe(uglify())
+        //.pipe(uglify())
         .pipe(concat('main.min.js'))
         .pipe(gulp.dest('./assets/dist/js/'));
 };

@@ -16,5 +16,32 @@
       "title": "lorem ispum 4",
       "description": "lorem ipsum is a latin text used as sample content placeholder"
     }
+  ],
+  "slideshow": [
+    {
+      "title": "Beatles",
+      "image": "slideshow/01.jpg",
+      "link": "http://x-team.com"
+    },
+    {
+      "title": "1970's",
+      "image": "slideshow/02.jpg",
+      "link": "http://x-team.com"
+    },
+    {
+      "title": "City 1",
+      "image": "slideshow/03.jpg",
+      "link": "http://x-team.com"
+    },
+    {
+      "title": "City 2",
+      "image": "slideshow/04.jpg",
+      "link": "http://x-team.com"
+    },
+    {
+      "title": "City 3",
+      "image": "slideshow/05.jpg",
+      "link": "http://x-team.com"
+    }
   ]
 }
