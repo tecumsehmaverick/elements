@@ -1,0 +1,14 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 4em 5em;
+}
+
+@import "../elements/collapsible/styles.scss";
+//@import "../../../elements/slideshow/styles.scss";

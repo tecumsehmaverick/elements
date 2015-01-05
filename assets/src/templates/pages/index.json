@@ -1,0 +1,20 @@
+{
+  "collapsible": [
+    {
+      "title": "lorem ispum 1",
+      "description": "lorem ipsum is a latin text used as sample content placeholder"
+    },
+    {
+      "title": "lorem ispum 2",
+      "description": "lorem ipsum is a latin text used as sample content placeholder"
+    },
+    {
+      "title": "lorem ispum 3",
+      "description": "lorem ipsum is a latin text used as sample content placeholder"
+    },
+    {
+      "title": "lorem ispum 4",
+      "description": "lorem ipsum is a latin text used as sample content placeholder"
+    }
+  ]
+}
