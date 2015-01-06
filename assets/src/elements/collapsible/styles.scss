@@ -6,16 +6,13 @@ collapsible {
         cursor: pointer;
     }
 
-    dt h2 {
-        border-bottom: 4px solid #bdbdbd;
+    dt {
     }
 
-    dt:hover h2 {
-        border-bottom: 4px solid #999;
+    dt:hover {
     }
 
-    dt.open h2 {
-        border-bottom: 4px solid #dbdbdb;
+    dt.open {
     }
 
     dd {

@@ -8,30 +8,23 @@ To use this material, include with your frontend files and follow the instructio
 
 Checkout a sample output of the elements at [bernardodiasc.github.io/elements](http://bernardodiasc.github.io/elements).
 
-## Elements available
+## Setup
 
-- [Collapsible](/assets/src/elements/collapsible)
-- [Slideshow](/assets/src/elements/slideshow)
-
----
-
-## Workflow
-
-### Install Node, NPM, Gulp and other dependencies
+__Install Node, NPM, Gulp and other dependencies...__
 
 1. Install Node.js
 2. `sudo npm install`
 3. `sudo npm install -g gulp`
 
-### How to use
+_This install steps instructions need to be improved._
 
-1. Open the file `gulpfile.js`
-2. Read and edit lines `#` (_TBP_)
-3. Run `gulp`
+## How to use
+
+Please checkout the __[HOWTO.md](./HOWTO.md)__ for futher instructions.
 
 ---
 
-## Options
+## Options available
 
 - __Templates (HTML)__
   - [x] XSLT (XML)
@@ -50,3 +43,4 @@ Checkout a sample output of the elements at [bernardodiasc.github.io/elements](h
   - [ ] Browserify
   - [ ] Coffee
   - [ ] Others...
+
