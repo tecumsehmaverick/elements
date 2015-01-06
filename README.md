@@ -1,5 +1,7 @@
 # Frontend Elements
 
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/bernardodiasc/elements?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 This project is a collection of custom HTML5 elements. And a way to compile everything into HTML, CSS and JS files while developing.
 
 The compilation step is by default with Gulp, and for development enviroment. This step can be done in several other ways, let us know if you have a different implementation.
