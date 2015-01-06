@@ -17,7 +17,7 @@ __TL;DR:__
 
 When creating a page, we sure want to display some formated DATA, so the HTML is the language that browsers read, and HTML is a markup language used to format the DATA. At this point you already knows that handling a website data with pure HTML is not a good idea. While this is a frontend development tool, we are considering that the data will came from an API. Some common transport languages are __XML__, __Json__, __CSV__, __YAML__ and is also common transport the data in __Arrays__, __Objects__ and __Serialized strings__. Everything about this depend on the system you are working in.
 
-This is important because this project is meant to be used with any content management system. We have Data sample working with template engines for static files, but template layer is usualy handled by content management systems, in that cases you'll not need to use the template folder and tasks provided in this source. The usage of the elements remains the same.
+This is important because this project is meant to be used with any content management system. This project have static Data samples working with template engines resulting static files, but template layer is usualy handled by content management systems, with dynamic Data, in that cases you may not need to use the template folder and tasks provided in this source. The usage of the elements remains the same.
 
 For static HTML result, checkout the [/assets/src/templates](./assets/src/templates) folder, there is 2 examples of how a page with elements looks like. The output is [/index.html](./index.html) ([bernardodiasc.github.io/elements](http://bernardodiasc.github.io/elements/)).
 
