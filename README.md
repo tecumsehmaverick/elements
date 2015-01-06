@@ -1,6 +1,6 @@
 # Frontend Elements
 
-This project is a collection of custom HTML5 elements.
+This project is a collection of custom HTML5 elements. And a way to compile everything into HTML, CSS and JS files while developing.
 
 The compilation step is by default with Gulp, and for development enviroment. This step can be done in several other ways, let us know if you have a different implementation.
 
@@ -20,7 +20,12 @@ _This install steps instructions need to be improved._
 
 ## How to use
 
-Please checkout the __[HOWTO.md](./HOWTO.md)__ for futher instructions.
+Please checkout the __[HOWTO.md](./HOWTO.md)__ for futher usage instructions.
+
+__Element instructions__
+
+- [/assets/src/elements/collapsible](./assets/src/elements/collapsible)
+- [/assets/src/elements/slideshow](./assets/src/elements/slideshow)
 
 ---
 
