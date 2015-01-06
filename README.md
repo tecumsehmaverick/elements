@@ -8,6 +8,8 @@ To use this material, include with your frontend files and follow the instructio
 
 Checkout a sample output of the elements at [bernardodiasc.github.io/elements](http://bernardodiasc.github.io/elements).
 
+Discussion channel [https://gitter.im/bernardodiasc/elements](https://gitter.im/bernardodiasc/elements)
+
 ## Setup
 
 __Install Node, NPM, Gulp and other dependencies...__
