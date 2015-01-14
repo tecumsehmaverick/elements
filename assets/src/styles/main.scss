@@ -1,5 +1,16 @@
+/*
+
+Default styles
+=====
+
+All of the default styles are embedded in the template, to avoid extra http requests and make
+distribution easier.
+
+*/
 html {
     box-sizing: border-box;
+    height: 100%;
+    max-height: 100%;
 }
 
 *, *:before, *:after {
@@ -7,8 +18,552 @@ html {
 }
 
 body {
-    margin: 4em 5em;
+    font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    word-wrap: break-word;
+    margin: 0;
+    height: inherit;
+    max-height: inherit;
 }
 
-@import "../elements/collapsible/styles.scss";
-@import "../elements/slideshow/styles.scss";
+p {
+    margin: 0 0 1em;
+}
+
+a {
+    color: #4183c4;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+    text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Serif;
+    line-height: 1.1;
+    margin: 2em 0 0.5em;
+}
+
+h1 {
+    padding-bottom: 0.3em;
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+
+h2 {
+    padding-bottom: 0.3em;
+    font-size: 1.75em;
+    line-height: 1.225;
+}
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+
+h4 {
+  font-size: 1.25em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+h1 a, h1 a:hover,
+h2 a, h2 a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+h1 a:hover:after,
+h2 a:hover:after {
+    content: ' #';
+    color: #999;
+}
+
+hr {
+    height: 1px;
+    border: none;
+    background: #ccc;
+    width: 90%;
+}
+
+blockquote {
+    font-style: italic;
+    border-left: .6em solid #EEE;
+    padding: 0 0 0 1em;
+    margin: 0 0 1em;
+}
+
+blockquote>:first-child {
+    margin-top: 0;
+}
+
+blockquote>:last-child {
+    margin-bottom: 0;
+}
+
+pre {
+/*> code blocks longer than section max width will scroll */
+    overflow-x: auto;
+    padding: 1em;
+    background: #eee;
+    border-radius: 5px;
+    margin: 0 0 1em;
+}
+
+code {
+    font-size: 1em;
+    line-height: 1.7;
+    background: #eee;
+    padding: .2em .4em;
+    border-radius: 3px;
+    word-wrap: normal;
+    color: #333;
+}
+
+pre code {
+    font-size: .9em;
+    line-height: 1.4;
+    padding: 0;
+}
+
+ul, ol {
+    padding: 0 0 0 1.2em;
+    margin: 0 0 1em;
+}
+
+/*
+Article and Section
+-----
+*/
+article {
+    margin: 0 0 1.5em;
+}
+
+section {
+    margin: 0 0 2px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 2em 0 2.7em;
+}
+
+section h1:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+section article:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+
+/*
+### source-ref
+
+*/
+.source-ref {
+    padding: 0 0 1em 0;
+    font-size: .8em;
+    font-style: italic;
+    color: #999;
+}
+
+.source-ref a {
+    color: #999;
+    text-decoration: none;
+}
+
+.source-ref a:hover {
+    text-decoration: underline;
+}
+
+
+/*
+Layout tag
+-----
+
+`<layout>` here is the element that wraps a bunch of rows and columns
+
+*/
+layout {
+    position: relative;
+    display: block;
+    font-size: 0.9rem;
+    height: 100%;
+    max-height: 100%;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    layout {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    layout {
+        font-size: 1rem;
+    }
+}
+
+@media print {
+    layout {
+        height: auto;
+    }
+}
+
+/*
+Row tag
+-----
+
+`<row>` is a line
+*/
+row {
+    position: relative;
+    display: block;
+    height: inherit;
+    max-height: inherit;
+}
+
+layout:before,
+layout:after,
+row:before,
+row:after {
+    content: " ";
+    display: table;
+}
+
+layout:after,
+row:after {
+    clear: both;
+}
+
+
+/*
+Column tag
+-----
+
+`<column col="[1-12]">` is a cell with fluid 12-column grid
+*/
+column {
+    position: relative;
+    display: block;
+    float: left;
+    overflow-y: auto;
+    height: initial;
+    max-height: initial;
+    padding: 1em;
+}
+
+column[cols="1"] {
+    width: 8.333333%;
+}
+
+column[cols="2"] {
+    width: 16.666666%;
+}
+
+column[cols="3"] {
+    width: 25%;
+}
+
+column[cols="4"] {
+    width: 33.333333%;
+}
+
+column[cols="6"] {
+    width: 50%;
+}
+
+column[cols="8"] {
+    width: 66.666666%;
+}
+
+column[cols="9"] {
+    width: 75%;
+}
+
+column[cols="10"] {
+    width: 83.333333%;
+}
+
+column[cols="11"] {
+    width: 91.666666667%;
+}
+
+column[cols="12"] {
+    width: 100%;
+}
+
+
+/*
+### Media queries for column
+
+Columns can have different grid values for different screen sizes. 
+*/
+
+/* // > use `cols-768` attr for max-width 768px breakpoint */
+@media (min-width: 768px) {
+    column {
+        height: 100%;
+        max-height: 100%;
+        padding: 1em;
+    }
+
+    column[cols-768="1"] {
+        width: 8.333333%;
+    }
+
+    column[cols-768="2"] {
+        width: 16.666666%;
+    }
+
+    column[cols-768="3"] {
+        width: 25%;
+    }
+
+    column[cols-768="4"] {
+        width: 33.333333%;
+    }
+
+    column[cols-768="6"] {
+        width: 50%;
+    }
+
+    column[cols-768="8"] {
+        width: 66.666666%;
+    }
+
+    column[cols-768="9"] {
+        width: 75%;
+    }
+
+    column[cols-768="10"] {
+        width: 83.333333%;
+    }
+
+    column[cols-768="11"] {
+        width: 91.666666667%;
+    }
+
+    column[cols-768="12"] {
+        width: 100%;
+    }
+}
+
+/* // > use `cols-1024` attr for max-width 1024px breakpoint */
+@media (min-width: 1024px) {
+    column[cols-1024="1"] {
+        width: 8.333333%;
+    }
+
+    column[cols-1024="2"] {
+        width: 16.666666%;
+    }
+
+    column[cols-1024="3"] {
+        width: 25%;
+    }
+
+    column[cols-1024="4"] {
+        width: 33.333333%;
+    }
+
+    column[cols-1024="6"] {
+        width: 50%;
+    }
+
+    column[cols-1024="8"] {
+        width: 66.666666%;
+    }
+
+    column[cols-1024="9"] {
+        width: 75%;
+    }
+
+    column[cols-1024="10"] {
+        width: 83.333333%;
+    }
+
+    column[cols-1024="11"] {
+        width: 91.666666667%;
+    }
+
+    column[cols-1024="12"] {
+        width: 100%;
+    }
+}
+
+/* // > use `cols-1680` attr for max-width 1680px breakpoint */
+@media (min-width: 1680px) {
+    column[cols-1680="1"] {
+        width: 8.333333%;
+    }
+
+    column[cols-1680="2"] {
+        width: 16.666666%;
+    }
+
+    column[cols-1680="3"] {
+        width: 25%;
+    }
+
+    column[cols-1680="4"] {
+        width: 33.333333%;
+    }
+
+    column[cols-1680="6"] {
+        width: 50%;
+    }
+
+    column[cols-1680="8"] {
+        width: 66.666666%;
+    }
+
+    column[cols-1680="9"] {
+        width: 75%;
+    }
+
+    column[cols-1680="10"] {
+        width: 83.333333%;
+    }
+
+    column[cols-1680="11"] {
+        width: 91.666666667%;
+    }
+
+    column[cols-1680="12"] {
+        width: 100%;
+    }
+}
+
+/*
+### Column Navigation
+
+*/
+column.navigation {
+    display: none;
+}
+
+column.navigation ul {
+    margin: 0;
+}
+
+@media (min-width: 1024px) {
+    column.navigation {
+        display: block;
+    }
+}
+
+/*
+### Column Content
+
+*/
+
+column.content img {
+    width: auto;
+    max-width: 100%;
+}
+
+column.content p,
+column.content ul,
+column.content blockquote {
+    width: 100%;
+    max-width: 38rem;
+}
+
+
+
+
+/* // > Target animation. When click on any link with anchor placeholder (#), this will highlight the target anchor. */
+h1:target {
+    animation: highlight 1s ease;
+}
+
+@keyframes highlight {
+    from {
+        background: yellow;
+    }
+    
+    to {
+        background: white;
+    }
+}
+
+
+
+/* 
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    filter:none !important;
+    -ms-filter: none !important;
+  }
+
+  {
+    font-size:12pt;
+    max-width:100%;
+    outline:none;
+    border: 0;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+} */
