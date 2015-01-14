@@ -1,0 +1,77 @@
+/*
+Article and Section
+-----
+*/
+
+section {
+    margin: 0 0 2px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 2em 0 2.7em;
+    
+    @media (min-width: 1024px) {
+        padding: 2em 2em 2.7em;
+    }
+    
+    h1:first-child {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    article {
+        margin: 0 0 1.5em;
+
+        &:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        img {
+            width: auto;
+            max-width: 100%;
+        }
+
+        p,
+        ul,
+        blockquote {
+            width: 100%;
+            max-width: 38rem;
+        }
+
+        /*
+        ### source-ref
+
+        */
+        .source-ref {
+            padding: 0 0 1em 0;
+            font-size: .8em;
+            font-style: italic;
+            color: #999;
+        }
+
+        .source-ref a {
+            color: #999;
+            text-decoration: none;
+        }
+
+        .source-ref a:hover {
+            text-decoration: underline;
+        }
+
+        /* // > Target animation. When click on any link with anchor placeholder (#), this will highlight the target anchor. */
+        h1:target {
+            animation: highlight 1s ease;
+        }
+
+    }
+}
+
+@keyframes highlight {
+    from {
+        background: yellow;
+    }
+
+    to {
+        background: white;
+    }
+}

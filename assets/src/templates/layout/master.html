@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
-  <!--
-  /*
+<!--
+/*
 
-  Html template
-  ====
+Html template
+====
 
-  This template is used when rendering docs to html, to wrap the markdown inside an html document.
+This template is used when rendering docs to html, to wrap the markdown inside an html document.
 
-  */
-  -->
+*/
+-->
     <head>
         <title>Docs!!</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
@@ -17,14 +17,12 @@
     </head>
     <body>
         <layout>
-          <row>
-            <column class="navigation" cols="12" cols-1680="2" cols-1024="4" cols-768="12">
-              <nav></nav>
-            </column>
-            <column class="content" cols="12" cols-1680="10" cols-1024="8" cols-768="12">
-            {% block content %}{% endblock %}
-            </column>
-          </row>
+            <row>
+                <column class="navigation" cols="12" cols-1680="3" cols-1024="4" cols-768="12"></column>
+                <column class="content" cols="12" cols-1680="9" cols-1024="8" cols-768="12">
+                    {% block content %}{% endblock %}
+                </column>
+            </row>
         </layout>
         <script src="./assets/dist/js/main.min.js"></script>
     </body>

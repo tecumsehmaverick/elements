@@ -1,0 +1,29 @@
+column {
+    /*
+    ### Navigation column
+
+    */
+    &.navigation {
+        display: none;
+        background: #efefef;
+        border-right: 5px solid #dfdfdf;
+        
+        ul {
+            margin: 0;
+
+        }
+
+        li {
+            display: block;
+
+            &:hover a {
+                background: #4183c4;
+                color: #fff;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            display: block;
+        }
+    }
+}

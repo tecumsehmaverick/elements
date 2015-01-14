@@ -1,0 +1,136 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+    max-height: 100%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    word-wrap: break-word;
+    margin: 0;
+    height: inherit;
+    max-height: inherit;
+}
+
+p {
+    margin: 0 0 1em;
+}
+
+a {
+    color: #4183c4;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+    text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    //font-family: Serif;
+    line-height: 1.1;
+    margin: 2em 0 0.5em;
+}
+
+h1 {
+    padding-bottom: 0.3em;
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+
+h2 {
+    padding-bottom: 0.3em;
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+
+h4 {
+  font-size: 1.25em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+h1 a, h1 a:hover,
+h2 a, h2 a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+h1 a:hover:after,
+h2 a:hover:after {
+    content: ' #';
+    color: #999;
+}
+
+hr {
+    height: 1px;
+    border: none;
+    background: #ccc;
+    width: 90%;
+}
+
+blockquote {
+    font-style: italic;
+    border-left: .6em solid #EEE;
+    padding: 0 0 0 1em;
+    margin: 0 0 1em;
+}
+
+blockquote>:first-child {
+    margin-top: 0;
+}
+
+blockquote>:last-child {
+    margin-bottom: 0;
+}
+
+pre {
+/*> code blocks longer than section max width will scroll */
+    overflow-x: auto;
+    padding: 1em;
+    background: #eee;
+    border-radius: 5px;
+    margin: 0 0 1em;
+}
+
+code {
+    font-size: 1em;
+    line-height: 1.7;
+    background: #eee;
+    padding: .2em .4em;
+    border-radius: 3px;
+    word-wrap: normal;
+    color: #333;
+}
+
+pre code {
+    font-size: .9em;
+    line-height: 1.4;
+    padding: 0;
+}
+
+ul, ol {
+    padding: 0 0 0 1.2em;
+    margin: 0 0 1em;
+}

@@ -1,0 +1,215 @@
+/*
+Layout tag
+-----
+
+`<layout>` here is the element that wraps a bunch of rows and columns
+
+*/
+layout {
+    position: relative;
+    display: block;
+    font-size: 0.9rem;
+    height: 100%;
+    max-height: 100%;
+    width: 100%;
+    
+    @media (min-width: 768px) {
+        font-size: 1rem;
+    }
+
+    @media (min-width: 1024px) {
+        font-size: 1rem;
+    }
+
+    @media print {
+        height: auto;
+    }
+
+    /*
+    Row tag
+    -----
+
+    `<row>` is a line
+    */
+    row {
+        position: relative;
+        display: block;
+        height: inherit;
+        max-height: inherit;
+    }
+
+    &:before,
+    &:after,
+    row:before,
+    row:after {
+        content: " ";
+        display: table;
+    }
+
+    &:after,
+    row:after {
+        clear: both;
+    }
+
+
+    /*
+    Column tag
+    -----
+
+    `<column col="[1-12]">` is a cell with fluid 12-column grid
+    */
+    column {
+        position: relative;
+        display: block;
+        float: left;
+        overflow-y: auto;
+        height: initial;
+        max-height: initial;
+        padding: 1em;
+
+        @media (min-width: 768px) {
+            height: 100%;
+            max-height: 100%;
+            padding: 1em;
+        }
+    }
+
+    column[cols="1"] {
+        width: 8.333333%;
+    }
+    column[cols="2"] {
+        width: 16.666666%;
+    }
+    column[cols="3"] {
+        width: 25%;
+    }
+    column[cols="4"] {
+        width: 33.333333%;
+    }
+    column[cols="6"] {
+        width: 50%;
+    }
+    column[cols="8"] {
+        width: 66.666666%;
+    }
+    column[cols="9"] {
+        width: 75%;
+    }
+    column[cols="10"] {
+        width: 83.333333%;
+    }
+    column[cols="11"] {
+        width: 91.666666667%;
+    }
+    column[cols="12"] {
+        width: 100%;
+    }
+    /*
+    ### Media queries for column
+    Columns can have different grid values for different screen sizes. 
+    */
+    /* // > use `cols-768` attr for max-width 768px breakpoint */
+    @media (min-width: 768px) {
+        column {
+            height: 100%;
+            max-height: 100%;
+            padding: 1em;
+        }
+        column[cols-768="1"] {
+            width: 8.333333%;
+        }
+        column[cols-768="2"] {
+            width: 16.666666%;
+        }
+        column[cols-768="3"] {
+            width: 25%;
+        }
+        column[cols-768="4"] {
+            width: 33.333333%;
+        }
+        column[cols-768="6"] {
+            width: 50%;
+        }
+        column[cols-768="8"] {
+            width: 66.666666%;
+        }
+        column[cols-768="9"] {
+            width: 75%;
+        }
+        column[cols-768="10"] {
+            width: 83.333333%;
+        }
+        column[cols-768="11"] {
+            width: 91.666666667%;
+        }
+        column[cols-768="12"] {
+            width: 100%;
+        }
+    }
+    /* // > use `cols-1024` attr for max-width 1024px breakpoint */
+    @media (min-width: 1024px) {
+        column[cols-1024="1"] {
+            width: 8.333333%;
+        }
+        column[cols-1024="2"] {
+            width: 16.666666%;
+        }
+        column[cols-1024="3"] {
+            width: 25%;
+        }
+        column[cols-1024="4"] {
+            width: 33.333333%;
+        }
+        column[cols-1024="6"] {
+            width: 50%;
+        }
+        column[cols-1024="8"] {
+            width: 66.666666%;
+        }
+        column[cols-1024="9"] {
+            width: 75%;
+        }
+        column[cols-1024="10"] {
+            width: 83.333333%;
+        }
+        column[cols-1024="11"] {
+            width: 91.666666667%;
+        }
+        column[cols-1024="12"] {
+            width: 100%;
+        }
+    }
+    /* // > use `cols-1680` attr for max-width 1680px breakpoint */
+    @media (min-width: 1680px) {
+        column[cols-1680="1"] {
+            width: 8.333333%;
+        }
+        column[cols-1680="2"] {
+            width: 16.666666%;
+        }
+        column[cols-1680="3"] {
+            width: 25%;
+        }
+        column[cols-1680="4"] {
+            width: 33.333333%;
+        }
+        column[cols-1680="6"] {
+            width: 50%;
+        }
+        column[cols-1680="8"] {
+            width: 66.666666%;
+        }
+        column[cols-1680="9"] {
+            width: 75%;
+        }
+        column[cols-1680="10"] {
+            width: 83.333333%;
+        }
+        column[cols-1680="11"] {
+            width: 91.666666667%;
+        }
+        column[cols-1680="12"] {
+            width: 100%;
+        }
+    }
+}
