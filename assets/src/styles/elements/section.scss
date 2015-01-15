@@ -4,11 +4,11 @@ Article and Section
 */
 
 section {
-    margin: 0 0 2px;
+    margin: 0 1em 2px;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
     padding: 2em 0 2.7em;
-    
+
     @media (min-width: 1024px) {
         padding: 2em 2em 2.7em;
     }

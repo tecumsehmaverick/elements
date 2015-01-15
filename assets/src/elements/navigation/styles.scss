@@ -1,0 +1,58 @@
+/*
+### Navigation column
+
+*/
+.navigation {
+    display: none;
+    background: #efefef;
+    border-right: 5px solid #dfdfdf;
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: block;
+            
+            &.level-1 > a  {
+                padding-left: 1em;
+            }
+            
+            &.level-2 > a  {
+                padding-left: 2.5em;
+            }
+            
+            &.level-3 > a  {
+                padding-left: 4em;
+            }
+            
+            &.level-4 > a  {
+                padding-left: 5.5em;
+            }
+            
+            &.level-5 > a  {
+                padding-left: 7em;
+            }
+            
+            &.level-6 > a  {
+                padding-left: 8.5em;
+            }
+        }
+    }
+    
+    a {
+        display: block;
+        width: 100%;
+        padding: 0.3em 0.5em;
+
+        &:hover {
+            background: #4183c4;
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        display: block;
+    }
+}

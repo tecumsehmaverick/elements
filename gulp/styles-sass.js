@@ -20,7 +20,7 @@ module.exports = function () {
         //.pipe(scsslint.reporter())
         .pipe(sass())
         .pipe(autoprefixer())
-        .pipe(minifycss())
+        //.pipe(minifycss())
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('./assets/dist/css/'));
 };
