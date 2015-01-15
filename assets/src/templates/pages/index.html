@@ -1,10 +1,10 @@
 {% extends '../layout/master.html' %}
 
 {% block content %}
-    {% include '../../elements/collapsible/templates.html' %}
+    {% include '../../elements/collapsible/templates.html' with { 'node': collapsible } %}
     {% include '../../elements/slideshow/templates.html' %}
     <br><br><br><br><hr>
     <h3>Repeating for testing purposes</h3>
-    {% include '../../elements/collapsible/templates.html' %}
+    {% include '../../elements/collapsible/templates.html' with { 'node': collapsible } %}
     {% include '../../elements/slideshow/templates.html' %}
 {% endblock %}

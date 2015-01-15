@@ -5,7 +5,9 @@
 <xsl:import href="../../elements/collapsible/templates.xsl"/>
 
 <xsl:template match="/data">
-    <xsl:call-template name="collapsible" />
+    <xsl:call-template name="collapsible">
+        <xsl:with-param name="node" select="/data/collapsible"/>
+    </xsl:call-template>
 </xsl:template>
 
 </xsl:stylesheet>

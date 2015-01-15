@@ -1,6 +1,8 @@
-# Frontend Elements
+# Frontend Elements Sandbox
 
-This project is a collection of custom HTML5 elements.
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/bernardodiasc/elements?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+This project is a collection of custom HTML5 elements. And a way to compile everything into HTML, CSS and JS files while developing.
 
 The compilation step is by default with Gulp, and for development enviroment. This step can be done in several other ways, let us know if you have a different implementation.
 
@@ -8,45 +10,23 @@ To use this material, include with your frontend files and follow the instructio
 
 Checkout a sample output of the elements at [bernardodiasc.github.io/elements](http://bernardodiasc.github.io/elements).
 
-## Elements available
+Discussion channel [https://gitter.im/bernardodiasc/elements](https://gitter.im/bernardodiasc/elements)
 
-- [Collapsible](/assets/src/elements/collapsible)
-- [Slideshow](/assets/src/elements/slideshow)
+## Setup
 
----
-
-## Workflow
-
-### Install Node, NPM, Gulp and other dependencies
+__Install Node, NPM, Gulp and other dependencies...__
 
 1. Install Node.js
 2. `sudo npm install`
 3. `sudo npm install -g gulp`
 
-### How to use
+_This install steps instructions need to be improved._
 
-1. Open the file `gulpfile.js`
-2. Read and edit lines `#` (_TBP_)
-3. Run `gulp`
+## How to use
 
----
+Please checkout the __[HOWTO.md](./HOWTO.md)__ for futher usage instructions.
 
-## Options
+__Element instructions__
 
-- __Templates (HTML)__
-  - [x] XSLT (XML)
-  - [x] Swig (Json)
-  - [ ] Jade (Json)
-  - [ ] HAML (YAML)
-  - [ ] Others...
-
-- __Styles (CSS)__
-  - [x] Sass
-  - [ ] Less
-  - [ ] Stylus
-
-- __Scripts (JS)__
-  - [x] Self executing anonymous functions
-  - [ ] Browserify
-  - [ ] Coffee
-  - [ ] Others...
+- [/assets/src/elements/collapsible](./assets/src/elements/collapsible)
+- [/assets/src/elements/slideshow](./assets/src/elements/slideshow)
